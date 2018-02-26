@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Bootstrap css and Jquery cdn link added -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- Added css stylesheet link -->
+	<link rel="stylesheet" type="text/css" href="col_drp.css">
+	<title>Design Pattern Assignment</title>
+</head>
+<body>
+	<header class="container-fluid">
+		<h1>Assignment 2 (a): Design pattern</h1>
+	</header>
+	<!-- Below div is for options for design pattern -->
+	<div class="container-fluid" id="hp">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-3" style="border-color: black;background-color: yellow;">
+				<p>COLUMN DROP <a href="#" onclick="visible_fn('col_drp','1');">Click here!</a></p>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-3" style="border-color: black;background-color: skyblue;">
+				<p>Mostly Fluid <a href="#" onclick="visible_fn('mostly_fluid','2');">Click here!</a></p>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-3" style="border-color: black;background-color: lightgreen;">
+				<p>Layout Shifter <a href="#" onclick="visible_fn('lay_shftr','3');">Click here!</a></p>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-3" style="border-color: black;background-color: gray;color:white;">
+				<p>Off Canvas Pattern <a href="#" onclick="visible_fn('off_cnvs','4');" style="color: white;">Click here!</a></p>
+			</div>
+		</div>
+	</div>
+<!-- Below first main div is for col drop design pattern then second one is for mostly fluid third one is for layout shifter and fourth is for off canvas. For reference user can see id names -->
+	<div id="col_drp" style="background-color: lightyellow;display: none;" class="container-fluid">
+		<div class="row">
+		  	<div id="cdDiv1" class="sidediv col-sm-3 col-md-2 col-sm-pull-9 col-md-pull-8">
+				<p style="font-size: 3vw">My Interests</p>
+
+				<div class="firstDivClass">
+						<img src="images/chef_icon.png" class="firstDivImg" alt="Cooking" />
+						<h4 class="firstDivText">Cooking</h4>
+					
+						<img src="images/skating.jpg" class="firstDivImg" alt="Skating" />
+						<h4 class="firstDivText">Skating</h4>
+					
+						<img src="images/dancing.png" class="firstDivImg" alt="Dancing" />
+						<h4 class="firstDivText">Dancing</h4>
+					
+						<img src="images/rugby.png" class="firstDivImg" alt="American Football" />
+						<h4 class="firstDivText">American Football</h4>
+				</div>
+			</div>
+
+			<div id="cdDiv2" class="col-sm-9 col-md-8 col-sm-push-3 col-md-push-2">
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Chef</h2>
+					<img src="images/vikaskhanna.jpg" alt="Favourite Chef - Vikas Khanna" />
+					<div class="row"><p>Vikas Khanna</p></div>
+				</div>
+
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Folk Dance</h2>
+					<img src="images/bhangra.jpg" alt="Favourite Folk Dance - Bhangra" />
+					<div class="row"><p>Bhangra</p></div>
+				</div>
+
+				
+			</div>
+
+			<div id="cdDiv3" class="sidediv col-xs-12 col-md-2">
+				<p style="font-size: 3vw">My Interests</p>
+				<div class="firstDivClass">
+					<img src="images/coding.png" class="firstDivImg" alt="Coding" />
+					<h4 class="firstDivText">Coding</h4>
+				
+					<img src="images/Roller_Inline_Hockey.png" class="firstDivImg" alt="Roller Hockey" />
+					<h4 class="firstDivText">Roller Hockey</h4>
+				
+					<img src="images/massaging.png" class="firstDivImg" alt="Massage" />
+					<h4 class="firstDivText">Massage</h4>
+				
+					<img src="images/acting.png" class="firstDivImg" alt="Acting" />
+					<h4 class="firstDivText">Acting</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="mostly_fluid" style="background-color: skyblue;display: none;" class="container-fluid">
+		<div class="row">
+
+			<div id="mfDiv1" class="sidediv col-sm-2 col-sm-pull-8">
+				<p style="font-size: 3vw">My Interests</p>
+
+				<div class="firstDivClass">
+						<img src="images/chef_icon.png" class="firstDivImg" alt="Cooking" />
+						<h4 class="firstDivText">Cooking</h4>
+					
+						<img src="images/skating.jpg" class="firstDivImg" alt="Skating" />
+						<h4 class="firstDivText">Skating</h4>
+					
+						<img src="images/dancing.png" class="firstDivImg" alt="Dancing" />
+						<h4 class="firstDivText">Dancing</h4>
+					
+						<img src="images/rugby.png" class="firstDivImg" alt="American Football" />
+						<h4 class="firstDivText">American Football</h4>
+				</div>
+			</div>
+
+			<div id="mfDiv2" class="col-sm-8 col-sm-push-2">
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Chef</h2>
+					<img src="images/vikaskhanna.jpg" alt="Favourite Chef - Vikas Khanna" />
+					<div class="row"><p>Vikas Khanna</p></div>
+				</div>
+
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Folk Dance</h2>
+					<img src="images/bhangra.jpg" alt="Favourite Folk Dance - Bhangra" />
+					<div class="row"><p>Bhangra</p></div>
+				</div>
+			</div>
+
+			<div id="mfDiv3" class="sidediv col-sm-2">
+				<p style="font-size: 3vw">My Interests</p>
+				<div class="firstDivClass">
+					<img src="images/coding.png" class="firstDivImg" alt="Coding" />
+					<h4 class="firstDivText">Coding</h4>
+				
+					<img src="images/Roller_Inline_Hockey.png" class="firstDivImg" alt="Roller Hockey" />
+					<h4 class="firstDivText">Roller Hockey</h4>
+				
+					<img src="images/massaging.png" class="firstDivImg" alt="Massage" />
+					<h4 class="firstDivText">Massage</h4>
+				
+					<img src="images/acting.png" class="firstDivImg" alt="Acting" />
+					<h4 class="firstDivText">Acting</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="lay_shftr" style="background-color: lightgreen;display: none;" class="container-fluid">
+		<div class="row">
+			<div class="d-none d-md-block d-lg-none">
+				<p style="font-size: 4vw">My Interests are : Cooking, Skating, Dancing, American Football, Coding, Roller Hockey, Massage and Acting</p>
+			</div>
+		</div>
+		<div class="row">
+
+			<div id="lsDiv1" class="sidediv col-xs-12 col-md-2 d-block d-md-none d-lg-block">
+				<p style="font-size: 3vw">My Interests</p>
+
+				<div class="firstDivClass">
+						<img src="images/chef_icon.png" class="firstDivImg" alt="Cooking" />
+						<h4 class="firstDivText">Cooking</h4>
+					
+						<img src="images/skating.jpg" class="firstDivImg" alt="Skating" />
+						<h4 class="firstDivText">Skating</h4>
+					
+						<img src="images/dancing.png" class="firstDivImg" alt="Dancing" />
+						<h4 class="firstDivText">Dancing</h4>
+					
+						<img src="images/rugby.png" class="firstDivImg" alt="American Football" />
+						<h4 class="firstDivText">American Football</h4>
+				</div>
+			</div>
+
+			<div id="lsDiv2" class="col-sm-9 col-lg-8 col-sm-push-3 col-lg-push-2">
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Chef</h2>
+					<img src="images/vikaskhanna.jpg" alt="Favourite Chef - Vikas Khanna" />
+					<div class="row"><p>Vikas Khanna</p></div>
+				</div>
+
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Folk Dance</h2>
+					<img src="images/bhangra.jpg" alt="Favourite Folk Dance - Bhangra" />
+					<div class="row"><p>Bhangra</p></div>
+				</div>
+			</div>
+
+			<div id="lsDiv3" class="sidediv col-xs-12 col-md-2 d-block d-md-none d-lg-block">
+				<p style="font-size: 3vw">My Interests</p>
+				<div class="firstDivClass">
+					<img src="images/coding.png" class="firstDivImg" alt="Coding" />
+					<h4 class="firstDivText">Coding</h4>
+				
+					<img src="images/Roller_Inline_Hockey.png" class="firstDivImg" alt="Roller Hockey" />
+					<h4 class="firstDivText">Roller Hockey</h4>
+				
+					<img src="images/massaging.png" class="firstDivImg" alt="Massage" />
+					<h4 class="firstDivText">Massage</h4>
+				
+					<img src="images/acting.png" class="firstDivImg" alt="Acting" />
+					<h4 class="firstDivText">Acting</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="off_cnvs" style="background-color: lightgray;display: none;" class="container-fluid">
+		<div class="row row-offcanvas row-offcanvas-left">
+		  	<div id="cdDiv1" class="sidediv col-sm-3 col-md-2 sidebar-offcanvas">
+				<p style="font-size: 3vw">My Interests</p>
+
+				<div class="firstDivClass nav nav-sidebar">
+						<img src="images/chef_icon.png" class="firstDivImg" alt="Cooking" />
+						<h4 class="firstDivText">Cooking</h4>
+					
+						<img src="images/skating.jpg" class="firstDivImg" alt="Skating" />
+						<h4 class="firstDivText">Skating</h4>
+					
+						<img src="images/dancing.png" class="firstDivImg" alt="Dancing" />
+						<h4 class="firstDivText">Dancing</h4>
+					
+						<img src="images/rugby.png" class="firstDivImg" alt="American Football" />
+						<h4 class="firstDivText">American Football</h4>
+				</div>
+			</div>
+
+			<div id="cdDiv2" class="col-sm-9 col-md-8 col-sm-push-3 col-md-push-2">
+				<!--toggle sidebar button-->
+	          <p class="d-block d-sm-block d-md-none">
+	            <button type="button" class="btn btn-primary" onclick="offcanvasBtn()">&#9776;</button>
+	          </p>
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Chef</h2>
+					<img src="images/vikaskhanna.jpg" alt="Favourite Chef - Vikas Khanna" />
+					<div class="row"><p>Vikas Khanna</p></div>
+				</div>
+
+				<div class="cdDiv2Content" style="padding: 1%; color:green;">
+					<h2>Favourite Folk Dance</h2>
+					<img src="images/bhangra.jpg" alt="Favourite Folk Dance - Bhangra" />
+					<div class="row"><p>Bhangra</p></div>
+				</div>
+
+				
+			</div>
+
+			<div id="cdDiv3" class="sidediv col-xs-12 col-md-2">
+				<p style="font-size: 3vw">My Interests</p>
+				<div class="firstDivClass">
+					<img src="images/coding.png" class="firstDivImg" alt="Coding" />
+					<h4 class="firstDivText">Coding</h4>
+				
+					<img src="images/Roller_Inline_Hockey.png" class="firstDivImg" alt="Roller Hockey" />
+					<h4 class="firstDivText">Roller Hockey</h4>
+				
+					<img src="images/massaging.png" class="firstDivImg" alt="Massage" />
+					<h4 class="firstDivText">Massage</h4>
+				
+					<img src="images/acting.png" class="firstDivImg" alt="Acting" />
+					<h4 class="firstDivText">Acting</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid">
+		<h4>Design pattern ends here</h4>
+	</footer>
+</body>
+<script type="text/javascript">
+	//Below function is to hide and show the design pattern content based on option selected by the user
+    function visible_fn(id,key) {
+       var e = document.getElementById(id);
+   		if(key === '1')
+   		{
+   			document.getElementById('mostly_fluid').style.display = 'none';
+   			document.getElementById('lay_shftr').style.display = 'none';
+   			document.getElementById('off_cnvs').style.display = 'none';
+   		}
+   		else if(key === '2')
+   		{
+   			document.getElementById('col_drp').style.display = 'none';
+   			document.getElementById('lay_shftr').style.display = 'none';
+   			document.getElementById('off_cnvs').style.display = 'none';
+   		}
+   		else if(key === '3')
+   		{
+   			document.getElementById('col_drp').style.display = 'none';
+   			document.getElementById('mostly_fluid').style.display = 'none';
+   			document.getElementById('off_cnvs').style.display = 'none';
+   		}
+   		else if(key === '4')
+   		{
+   			document.getElementById('col_drp').style.display = 'none';
+   			document.getElementById('lay_shftr').style.display = 'none';
+   			document.getElementById('mostly_fluid').style.display = 'none';
+   		}
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+    //Below Method is for expanding and collapsing the side div.
+    function offcanvasBtn()
+    {
+    	var e = document.getElementsByClassName('row-offcanvas')[0];
+    	if(e.classList.contains('active'))
+    		{
+    				e.classList.remove('active');
+			}
+    	else
+    		{
+    				e.classList.add('active');
+			}
+  	}
+</script>
+<!html>
